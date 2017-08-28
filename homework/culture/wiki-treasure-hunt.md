@@ -39,10 +39,30 @@ The issue body should have:
 -   Answers to each of the questions above, in the following format:
 
     ```text
-    1. Answer one.
-    2. A) Answer two, part one, B) Answer two, part two
-    ...
-    ```
+    1. a) Homework submission needs to be at 80% or higher
+       b) Attendance must be consistent (please see the Attendance Policy)
+       c) All unit projects need be submitted and presented to the instructional team and should meet project rubric expectations
+
+    2.   https://www.youtube.com/playlist?list=PLdnONIhPScSToZztXRHyKZTQEsE30luMx 
+
+    3. Javascript the Good Parts by Douglas Crockford
+     
+    4.  a)Reason for the change 
+        b)how the change addresses the issue
+        c) any side effects if any
+
+    5. a)copy of the error message
+       b)copy of the code with issue
+       c)parpagraph containing what you thought the error was, what the issue turned out to be, and how the issue was solved
+    6. a)https://git-scm.com/documentation
+       b)https://try.github.io/
+       c)http://onlywei.github.io/explain-git-with-d3
+    7. a)Animations
+       b)interative links(buttons)
+    8. 2 absences, 2 tardies equal one absence
+    9. API aggregators- https://www.producthunt.com/posts/publicapis
+    10. Labor Day and Vetrans Day    
 
 -   A 'comfort' score on how you feel about your answers, from 1 (very
     uncomfortable) to 5 (very comfortable)
+-   Comfort score- 3.5
