@@ -32,9 +32,8 @@ to answer these questions.
 
 ## Submitting Your Work
 
-When you're ready, create an issue on the class repo with
-a title in the format "YourGitHubUsername -- Week 01 Day 01".
-The issue body should have:
+When you're ready, post your Github link for this assignment to Schoology with:
+
 
 -   Answers to each of the questions above, in the following format:
 
@@ -66,3 +65,8 @@ The issue body should have:
 -   A 'comfort' score on how you feel about your answers, from 1 (very
     uncomfortable) to 5 (very comfortable)
 -   Comfort score- 3.5
+=======
+- A link to the file containing your homework answers
+- A 'comfort' score on how you feel about your answers, 
+from 1 (very uncomfortable) to 5 (very comfortable)
+ 8e7ce9faf39071676c55a8938b9c224fd8321aef
