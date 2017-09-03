@@ -1,0 +1,54 @@
+
+main{
+
+	display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;	
+}
+header{
+	background-color: rgba(165,152,125,.5);
+	color: rgb(27,27,12);
+	font-family: 'Fontdiner Swanky', regular;
+}
+.intro{
+	display:flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: center;		
+}
+
+section{
+	display:flex;
+	flex-direction: column;
+	flex-grow: 1;
+	text-align: center;	
+
+}
+.card-text{
+	overflow: hidden;
+}
+.card-group{
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+h2{
+	font-family: 'Fontdiner Swanky', regular;
+}
+footer{
+		
+}
+
+
+p{
+	text-indent: 4mm;
+}
+
+img{
+	width: 100%;
+	height: 50%;
+}
+.content{
+	padding-top: 20px;	
+}	
+
+
