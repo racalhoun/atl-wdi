@@ -27,49 +27,206 @@ entities/abstractions (e.g. Senior Paws app, above) that the app might use, and 
 
 ### 1. Ultra E-mail App
 
-This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
+This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address
+Entities( 1- User, 2- Email Providers)Guessing here- Not sure if the E-mail app would provide access to all E-mail providers or if the app only serves as a window that basically stores the URLs' of the users E-mail providers???? Going to assume it will serve as a window with a Logon Id and password requirement.
 
-```
-Write your answer here or in a separate js file.
-```
+let user = {
+  Name:'string',
+  eMailUserId: 'string',
+  eMailpassword: 'string'
+}
+let eMailProviders = {
+  providerUrl; 'string',
+  eMailUserId: 'string',
+  eMailpassword: 'string'
+},
+let = exampleUser = {
+  Name:'Ned Flanders',
+  eMailUserId: 'OHolyNight',
+  eMailpassword: 'thedevilsucks!',
+ eMailProviders: [{
+  appUserNaame: 'string',
+  appUserPassword: 'string',
+ }]
+}
+
+
+
 
 ### 2. Radio on the Internet app
 
 This app hosts a ton of radio stations, each featuring their own playlists of songs. The radio stations can be listed by genre or popularity.
+Entities(1- Listener, 2- Radio Stations)
 
-
-```
-Write your answer here or in a separate js file.
-```
+let listener = {
+ name: 'string',
+ favGenre: 'string'
+ favDecade: number,
+ podcastSub: 'string'
+},
+let Stations = {
+  timeZone: 'string',
+  frequency: 'string',
+  genre: 'string',
+  broadcastSchedule: 'string'
+},
+let exampleListener = {
+  name: 'Wolfman Jack',
+  favGenre: 'Rock-N-Roll',
+  favDecade: 1965.1975,
+  podcast: 'Whats' that?',
+  stations: [{
+   timeZone: 'EST'
+   frequency: '106.7',
+   genre: 'Classic Rock',
+   broadcastSchedule: 'All rock, all the time'
+  }]
+}
 
 ### 3. Rock Concert App
+Entities(1- Patron, 2-Bands, 3-Venues)
+let patron = {
+ name: 'string',
+ address: 'string',
+ genre: 'string',
+ favVenue: 'string'
+}
+let bands = {
+  name: 'string',
+  genre; 'string',
+  tourSched: 'string',
+  openingAct: 'string'
+}
+let venue = {
+  name: 'string',
+  address: 'string',
+  phone: number,
+  maxCap: number,
+  parking: 'string',
+  foodDrinks: 'string',
+  showSched: 'string'
+}
+let examplePatron = {
+ name: 'Ludlow lippowitz',
+ address: '123 Oak Street',
+ genre: 'Bluegrass',
+ favVenue: 'North Dakota's Finest Warm Spot',
+ bands: [{
+  name: 'The Frog Stickers',
+  genre; 'Bluegrass/Folk',
+  tourSched: 'TBD- Fred's van is broke',
+  openingAct: 'Wailin' Wendy',
+}]
+ venue: [{
+  name: 'Pattie's Heffer House',
+  address: '1 Dirt Road',
+  phone: 1239874567,
+  maxCap: 30,
+  parking: 'In the grass',
+  foodDrinks: 'Beer and peanuts',
+  showSched: 'Nope',
+}]
+}
+ 
 
-This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
-```
-Write your answer here or in a separate js file.
-```
+
+
 
 ### 4. Coffee To-Go App
-
-This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
+Entities(1-Drinker, 2- Bar, 3-App)
+let drinker = {
+ name:'string',
+ address: 'string',
+ phone: number,
+ eMailAddress: 'string',
+ creditCard: number,
+}
+let bar = {
+  name: 'string',
+  address: 'string',
+  phone: number,
+  hoursOfOperation: 'string',
+  driveThru: boolean,
+  seating: boolean,
+  food: 'string',
+}
+let app = {
+  userName: 'string',
+  password: 'string',
+  name:'string',
+  address: 'string',
+  phone: number,
+  eMailAddress: 'string',
+  creditCard: number,
+  coffeePref: 'string'
+}
+let exampledrinker = {
+ name:'DeDe Jones',
+ address: '154 Walker St',
+ phone: 15634527892,
+ eMailAddress: 'djones1@email.com',
+ creditCard: 37845672098098,
+}
+ bar: [{
+  name: 'Burn Yo Ass',
+  address: '333 Avenue Ave',
+  phone: 89374012373,
+  hoursOfOperation: '5 to 9, Mon thru Fri',
+  driveThru: false,
+  seating: true,
+  food: 'pasteries',
+}],
+ app: [{
+  userName: 'jonesD1',
+  password: 'dtagumm2!',
+  name:'DeDe Jones',
+  address: '154 Walker St',
+  phone: 15634527892,
+  eMailAddress: 'djones1@email.com',
+  creditCard: 37845672098098,
+  coffeePref: 'Half-caf- Mocha-Latte, hold the ice, wipped cream'
+}]
+}
 
 ### 5. Team Tracker App
-
-This app shows you all the latest stats from your favorite sports teams. You can view individual player stats and full team stats.
-
-```
-Write your answer here or in a separate js file.
-```
-
+Entities(1- Fan, 2-Team)
+let fan = {
+  name: 'string',
+  address: 'string',
+  favTeam: 'string'
+}
+let team = {
+  name:'string',
+  gameDates:'string',
+  teamRecord: 'string',
+  playerStats: 'string',
+  injuries: 'string',
+  homeStadium: 'string',
+  history: 't=string'
+}
+let exampleFan = {
+  name: 'Stan Penny',
+  address: '8989 Fred St',
+  favTeam: 'Da-Bears' 
+},
+team: [{
+  name:'Bears',
+  gameDates:'Sept 4 thru Jan 2',
+  teamRecord: '4-0',
+  playerStats: 'Tons',
+  injuries: 'Floyd Johnson, RB, Groin Pull',
+  homeStadium: 'Soldier Field',
+  history: 'Tons'
+}]
+}
 
 ### Final Thoughts:
 
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
+1- Found it difficult to seperate the parameters needed of the user and the provider
+2- Trying to think of everything needed
 
-```
-Write your answer here or in a separate js file.
-```
 
 ### Reading and Videos for Tomorrow
 Now that you've had some practice really thinking about the data design of an app, we're going to learn about MongoDB, a no-SQL database. Starting tomorrow, our Express apps will be talking to the Mongo database through Mongoose. Since we're covering a LOT of ground tomorrow, take some time to introduce yourself to concepts and lingo surrounding MongoDB and Mongoose. You will _not_ have to memorize the technical details here.

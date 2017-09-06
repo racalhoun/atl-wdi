@@ -52,7 +52,11 @@ Write a function `isCool` that accepts one parameter, `name` as an argument. The
 console.log(isCool("Thom"));
 
 => "Thom is super cool";
-```
+``
+function isCool(name) {
+    console.log(name + "is super cool");
+}
+    
 
 ## 6
 
@@ -63,7 +67,14 @@ Write a function `twoLengths` that accepts two parameters (strings). The functio
 twoLengths("Hank", "Hippopopalous");
 // => [4, 13]
 ```
+function twoLengths(one,two) {
+    let sum = [one,two]; 
+    let odd = [];
+    let
+}
 
+    
+}
 ## 7
 
 Write a Javascript function called `transmogrifier`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
@@ -93,28 +104,22 @@ Fizz Buzz! Write a loop that will iterate through numbers from 1 to 100 and log 
 
 Hint: Use modulus `%`
 
-```
-=>
+let max = 100;
+for ( let i = 0; i < 100; i ++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('fizzbuzz');
+    }
+        else if (i % 3 === 0) {
+        console.log('fizz');
+        }
+        else if( i % 5 === 0) {
+            console.log('buzz');
+        }
+        else{
+            null;
+        }
+    }
 
-1
-2
-Fizz
-3
-4
-Buzz
-6
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-Fizzbuzz
-etc...
-
-```
 
 ## 9
 
