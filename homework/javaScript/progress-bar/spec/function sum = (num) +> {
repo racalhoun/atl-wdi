@@ -1,0 +1,30 @@
+function sum = (x,y,z) => {
+	console.log(x + y + z);
+}
+sum(1,2,3);
+
+
+function sum = (1,2,3) => {
+	console.log()
+}
+
+
+//"to the power"- 
+
+function toThePower(x.y) {
+	return Math.pow(x,y);
+}
+toThePower(2,3);
+
+//"Plus One" - takes "to the power"(above) and adds to it 1".
+
+const power = toThePower(2,3);
+const newSum = plusOne(power);
+console.log(newSum);
+
+"Palendrome" - takes the word	
+
+
+
+
+
