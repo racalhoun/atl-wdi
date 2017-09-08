@@ -43,7 +43,7 @@ function maxOfThree(a,b,c) {
 
 // Question 4
  const total = [1,2,3,4];
-function sumArray = (array) => {
+function sumArray (array) {
     let sum = 0;
     for ( let i = 0; i < array.length; i++){
          sum += array[i];
@@ -88,7 +88,7 @@ String.prototype.reverseString =
 
 
 // Bonus 2
-/*function charactersOccurancesCount(str) {
+function charactersOccurancesCount(str) {
     let arr = str.toLowerCase().split("");
     let ob = {};
     arr.forEach(function(ch) {
@@ -96,5 +96,6 @@ String.prototype.reverseString =
         ob[ch]
     }
 }
-  */
+  charactersOccurancesCount();
+
 

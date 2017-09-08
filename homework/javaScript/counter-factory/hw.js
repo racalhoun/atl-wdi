@@ -46,10 +46,11 @@ const CounterCollection = {
 };
 
 // UI //
-const Presenter = {
+/*const Presenter = {
   insertCounterComponent: function(newCountId){
     console.log(`insert counter component #${newCountId}`);
     // Your Code Here
+
   },
   refreshCounterComponent: function(countId){
     console.log(`refresh counter component #${countId}`);
@@ -59,15 +60,21 @@ const Presenter = {
     console.log(`remove counter component #${countId}`);
     // Your Code Here
   }
-};
+};*/
 
 // Top-Level Application Control //
 const AppController = {
   onClickNewCounter: function(event){
-    // Your Code Here
+  let counterList = document.getElementById('counter-list');
+  const str = "<div class='counter' data-index='2'><h3>Count: <span>0</span></h3><button class='increment'> + 1</button></div>";
+  counterList.innerHTML += str;
+  
+
   },
   onClickIncrement: function(event){
-    // Your Code Here
+    const incrementSpan = document.querySelectorAll('span')[-0];
+    let total = 0
+  
   },
   onClickDelete: function(event){                           // REACH
     // Your Code Here
@@ -76,4 +83,6 @@ const AppController = {
 
 window.onload = function(){
   document.getElementById('new-counter').onclick = AppController.onClickNewCounter;
+  document.getElementById('counter-list').onclick = AppController.onClickIncrement;
+
 };

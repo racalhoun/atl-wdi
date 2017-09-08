@@ -10,43 +10,61 @@
 // Input: an array of numbers
 // Output: the sum of the numbers that were passed in
 // Edge Case: If the array is empty, return 0
+// The arrays for the functions have been declared in another linked sheet.
 var sumOfNums = function(numsArray){
   var sum = 0;
   for(var i = 0; i < numsArray.length; i ++) {
     sum += numsArray[i];
   }
-}
 return sum();
-
+}
 
 // #2
 // Input: an array of numbers
 // Output: an array of the numbers from the first array that are strictly
 //         greater (i.e. greater than but not equal to) than 10
 var numsGreaterThanTen = function(numsArray){
-  var results = [];
-  for( var i = 0; i < nums.length; i++) {
+ let total = [];
+  for (var i = 0; i < numsArray.length; i++) {
     if (numsArray[i] > 10) {
-      results.push(numsArray[i]);
-
+      push.total(numsArray[i]);
+    }else{
+          return total;
+    }
   }
 }
-return results;
+
 // #3
 // Input: an array of numbers
 // Output: `true` if ALL numbers passed in are strictly greater than 10;
 //         `false` otherwise
 // Edge Case: If the input array is empty, the function should return `true`.
 var allGreaterThanTen = function(numsArray){
-  for (var i = 0; i < numsArray.length; i++) {
-    if (numsArray[i] > 10 )
-  // Your Code Here
-}
+  let doubleDig = [];
+for (let i = 0; i < numsArray.length; i++) {
+  if(numsArray.length[i] > 10) {
+    return true;
+  }else{
+    return false;
+  }
 
-// #4
+} 
+
+
+
+
+
+
+
+
 // Input: an array of words
 // Output: an array of all words from the first array with five or more letters
 var wordsWithAtLeastFiveLetters = function(words){
+  let wordArray = [];
+  for ( let i = 0; i < words.length; i++) {
+    if (words.length[i])
+
+  }
   // Your Code Here
 }
 
