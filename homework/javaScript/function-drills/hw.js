@@ -27,7 +27,7 @@ var numsGreaterThanTen = function(numsArray){
  let total = [];
   for (var i = 0; i < numsArray.length; i++) {
     if (numsArray[i] > 10) {
-      push.total(numsArray[i]);
+      total.push(numsArray[i]);
     }else{
           return total;
     }
@@ -62,8 +62,10 @@ for (let i = 0; i < numsArray.length; i++) {
 var wordsWithAtLeastFiveLetters = function(words){
   let wordArray = [];
   for ( let i = 0; i < words.length; i++) {
-    if (words.length[i])
-
+    if (words.length[i] >=5){
+      wordArray.push(words[i]);
+    }
+   return wordArray;
   }
   // Your Code Here
 }
@@ -75,6 +77,13 @@ var wordsWithAtLeastFiveLetters = function(words){
 // Edge Case: If the array is empty, the function should return `true`.
 var allStartingWithA = function(words){
   // Your Code Here
+ for ( let i = 0; i < words.length; i++) {
+   if( words.charAt(i) === 'a'){
+     return true;
+   }else{
+     return false;
+   }
+ }
 };
 
 // #6
@@ -83,6 +92,13 @@ var allStartingWithA = function(words){
 //          (case-insensitive), `false` otherwise
 var anyStartingWithB = function(words){
   // Your Code Here
+  for(let i = 0; i < words.length; i++) {
+    if(words.charAt(i) === 'b'){
+      return true;
+    }else{
+      return false;
+    }
+  }
 }
 
 // #7
@@ -93,8 +109,18 @@ var anyStartingWithB = function(words){
 // Edge Case: If `n` is less than zero, return `null`.
 var hasAtLeastNVowels = function(word, n){
   // Your Code Here
-}
-
+  let result = [];
+  if(n < 0){
+    return null;
+  }for(let i = 0; i < word.length; i++) {
+    if (word.charAt(i) === a,A,e,E,I,i,O,o,U,u) {
+      result.push(word[i]);
+    }if(result.length >= n){
+      return true;
+    }else{
+      return false;
+    }
+  }
 // #8
 // Input: an array of words
 // Output: an array of words from the original array that have at least two
