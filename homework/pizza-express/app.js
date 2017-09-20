@@ -3,9 +3,7 @@ var express = require('express');
 //save an express module as 'app'
 var app = express();
 // assigning 3000 as our port
-const hbs = require('hbs');
-
-
+const hbs = require('hbs')
 app.set("view engine", "hbs");
 
 app.get('/greeting', function(req, res) {
@@ -16,16 +14,19 @@ app.get('/greeting', function(req, res) {
 })
 
 app.get('/topping/:stuff', function(req, res) {
-  console.log(req)
-  const stuff = req.params.stuff;
+  const stuff = req.params.stuff
   res.render('topping', {
      top: stuff
   })
 })
-app.get('/order/10/med', function(req, res, next) {
-  
-       res.send("Your order for 10 medium pizzas will be ready in 1 minute!");
-   });
+app.all('/order/:amount/:size', function(req, res, next) {
+  const size = req.params.size;
+  const amount = req.params.amount;
+    res.render('order', {
+    many: amount,
+    size: size
+  })
+})
 
 
 
