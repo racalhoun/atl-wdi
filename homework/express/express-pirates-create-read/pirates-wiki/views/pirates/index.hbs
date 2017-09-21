@@ -1,0 +1,19 @@
+
+<h1>Pirates</h1> <!--- This is what will be rendered onto the page
+                        - When called, everything inside the app.get function on line 7 will run-->
+
+<ul>
+    {{#each pirates}} <!--- This line is telling the browser to render each of the elements inside the array displayed seperately. The data arguement is the key reference for the name of the array-'The array assigned to the variable faveShows that is assigned to the key- data.'-->
+    <li>name:{{name}}</li>
+    <li>birthplace:{{birthplace}}</li><!--- This is the shorthand reference for the function calling the array. Easier than typing out the array/function.-->
+    <li>death_year:{{death_year}}</li>
+    <li>base: {{base}}</li>
+    <li>nickname:{{nickname}}</li><br>
+    {{/each}} <!-- This is just the handlebar version of closing the #each referenced in line 5- Like <#each></each>.-->
+</ul>
+<a href="pirates/new">Make a new Pirate</a>
+
+
+
+
+

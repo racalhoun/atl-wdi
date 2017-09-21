@@ -22,9 +22,9 @@ app.get('/topping/:stuff', function(req, res) {
 app.all('/order/:amount/:size', function(req, res, next) {
   const size = req.params.size;
   const amount = req.params.amount;
-    res.render('order', {
+    res.render('order', {// need to make a third variable and assign the size and ampunt to an array.
     many: amount,
-    size: size
+    size: size // this should be the name of the array variabe.
   })
 })
 
