@@ -1,9 +1,15 @@
+
+
 <h1> Todos </h1>
 <ul>
   {{#each todos}}
     <li>Description: {{description}}</li>
     <li>Urgent: {{urgent}}</li>
     <br>
+    <div><a href="/todos/{{@index}}/edit">EDIT</a></div>
+    <form action="/todos/{{@index}}?_method=DELETE" method="POST"><!--?_method="DELETE" is linked to app.use in the server.js-->
+      <input type="submit" value="DELETE"/>
+    </form>
   {{/each}}
-</ul>
+  </ul> 
 <a href="/todos/new">Create a new todo</a>

@@ -1,15 +1,28 @@
 /* packages */
 var path        = require('path');
+// above we are requiring the path package to communicate across files- assigned to variable
 var logger      = require('morgan');
+//
 var express     = require('express');
+
 var hbs         = require('hbs');
+
 const bodyParser = require('body-parser');
+
+var methodOverride = require('method-override');
+
 /* app settings*/
+
 var app         = express();
-var port        = process.env.PORT || 3000;
+
+var port        = process.env.PORT || 3001;
+
 /* set up the application params*/
+
 const todosController = require('./controllers/todos');
+
 // log
+app.use(methodOverride('_method'));//the _method corresponds to the method in the middleware in the index.hbs
 app.use( logger('dev'));
 app.use (bodyParser.urlencoded({
   extended: true

@@ -1,11 +1,13 @@
 <h1>Pirate List</h1> <!--- This is what will be rendered onto the page
                         - When called, everything inside the app.get function on line 7 will run-->
-
+{{#if error}}
+<h1>{{error}}</h1>
+{{/if}}
 <ul>
      <!--- This line is telling the browser to render each of the elements inside the array displayed seperately. The data arguement is the key reference for the name of the array-'The array assigned to the variable faveShows that is assigned to the key- data.'-->
-    <li>{{pirate.name}}</li> <!--- This is the shorthand reference for the function calling the array. Easier than typing out the array/function.-->
-    <li>{{pirate.irthplace}}</li>
-	<li>{{pirate.death_year}}</li>
-    <li>{{pirate.base}}</li>
-   <li>{{pirate.nickname}}</li>
+    <li>{{pirates.name}}</li> <!--- This is the shorthand reference for the function calling the array. Easier than typing out the array/function.-->
+    <li>{{pirates.birthplace}}</li>
+	<li>{{pirates.death_year}}</li>
+    <li>{{pirates.base}}</li>
+   <li>{{pirates.nickname}}</li>
 </ul>

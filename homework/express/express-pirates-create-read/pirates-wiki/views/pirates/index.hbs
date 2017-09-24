@@ -4,14 +4,22 @@
 
 <ul>
     {{#each pirates}} <!--- This line is telling the browser to render each of the elements inside the array displayed seperately. The data arguement is the key reference for the name of the array-'The array assigned to the variable faveShows that is assigned to the key- data.'-->
-    <li>name:{{name}}</li>
-    <li>birthplace:{{birthplace}}</li><!--- This is the shorthand reference for the function calling the array. Easier than typing out the array/function.-->
-    <li>death_year:{{death_year}}</li>
+    <li>name: {{name}}</li>
+    <li>birthplace: {{birthplace}}</li><!--- This is the shorthand reference for the function calling the array. Easier than typing out the array/function.-->
+    <li>death_year: {{death_year}}</li>
     <li>base: {{base}}</li>
-    <li>nickname:{{nickname}}</li><br>
+    <li>nickname: {{nickname}}</li><br>
+    
+    <div><a href="/pirates/{{@index}}/edit">EDIT</a></div>
+        <form action="/pirates/{{@index}}?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE"/>
+        </form>
+      <hr>   
     {{/each}} <!-- This is just the handlebar version of closing the #each referenced in line 5- Like <#each></each>.-->
 </ul>
-<a href="pirates/new">Make a new Pirate</a>
+<button>><a href="/pirates/new"></a>Make a new pirate</button>   
+
+
 
 
 
