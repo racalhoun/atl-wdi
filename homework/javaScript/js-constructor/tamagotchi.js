@@ -34,6 +34,7 @@ let object2 = new Tamagotchie('Ned');
 object2.cry();
 object2.puke();
 object2.yawn();
+
 //var object2 = new Tamagotchie('Ned');
 
 
