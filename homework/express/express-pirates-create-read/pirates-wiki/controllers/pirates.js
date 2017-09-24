@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
         pirates: pirates
     })
 });
-//getting new folder route
+//getting new folder rou 
 router.get('/new', (req,res) => {
     res.render('pirates/new');
     
