@@ -31,20 +31,24 @@ This app provides easy access to all your e-mail service providers in one app. T
 Entities( 1- User, 2- Email Providers)Guessing here- Not sure if the E-mail app would provide access to all E-mail providers or if the app only serves as a window that basically stores the URLs' of the users E-mail providers???? Going to assume it will serve as a window with a Logon Id and password requirement.
 
 let user = {
+  id: Number,
   Name:'string',
   eMailUserId: 'string',
   eMailpassword: 'string'
 }
 let eMailProviders = {
+  id: Number,
   providerUrl; 'string',
   eMailUserId: 'string',
   eMailpassword: 'string'
 },
-let = exampleUser = {
+let exampleUser = {
+  id: 22,
   Name:'Ned Flanders',
   eMailUserId: 'OHolyNight',
   eMailpassword: 'thedevilsucks!',
  eMailProviders: [{
+  id: 11, 
   appUserNaame: 'string',
   appUserPassword: 'string',
  }]
@@ -59,23 +63,27 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 Entities(1- Listener, 2- Radio Stations)
 
 let listener = {
+ id: Number,
  name: 'string',
  favGenre: 'string'
  favDecade: number,
- podcastSub: 'string'
+ podcast: 'string'
 },
 let Stations = {
+  id: Number,
   timeZone: 'string',
   frequency: 'string',
   genre: 'string',
   broadcastSchedule: 'string'
 },
 let exampleListener = {
+  id: 21,
   name: 'Wolfman Jack',
   favGenre: 'Rock-N-Roll',
   favDecade: 1965.1975,
   podcast: 'Whats' that?',
   stations: [{
+   id: 12,
    timeZone: 'EST'
    frequency: '106.7',
    genre: 'Classic Rock',
@@ -86,18 +94,21 @@ let exampleListener = {
 ### 3. Rock Concert App
 Entities(1- Patron, 2-Bands, 3-Venues)
 let patron = {
+ id: Number, 
  name: 'string',
  address: 'string',
  genre: 'string',
  favVenue: 'string'
 }
 let bands = {
+  id: Number,
   name: 'string',
   genre; 'string',
   tourSched: 'string',
   openingAct: 'string'
 }
 let venue = {
+  id: Number,
   name: 'string',
   address: 'string',
   phone: number,
@@ -107,17 +118,20 @@ let venue = {
   showSched: 'string'
 }
 let examplePatron = {
+ id: 33, 
  name: 'Ludlow lippowitz',
  address: '123 Oak Street',
  genre: 'Bluegrass',
  favVenue: 'North Dakota's Finest Warm Spot',
  bands: [{
+  id: 99, 
   name: 'The Frog Stickers',
   genre; 'Bluegrass/Folk',
   tourSched: 'TBD- Fred's van is broke',
   openingAct: 'Wailin' Wendy',
 }]
  venue: [{
+  id: 73,
   name: 'Pattie's Heffer House',
   address: '1 Dirt Road',
   phone: 1239874567,
@@ -136,6 +150,7 @@ let examplePatron = {
 ### 4. Coffee To-Go App
 Entities(1-Drinker, 2- Bar, 3-App)
 let drinker = {
+ id: Number,
  name:'string',
  address: 'string',
  phone: number,
@@ -143,6 +158,7 @@ let drinker = {
  creditCard: number,
 }
 let bar = {
+  id: Number,
   name: 'string',
   address: 'string',
   phone: number,
@@ -152,6 +168,7 @@ let bar = {
   food: 'string',
 }
 let app = {
+  id: Number,
   userName: 'string',
   password: 'string',
   name:'string',
@@ -162,6 +179,7 @@ let app = {
   coffeePref: 'string'
 }
 let exampledrinker = {
+ id: 61, 
  name:'DeDe Jones',
  address: '154 Walker St',
  phone: 15634527892,
@@ -169,6 +187,7 @@ let exampledrinker = {
  creditCard: 37845672098098,
 }
  bar: [{
+  id: 371,
   name: 'Burn Yo Ass',
   address: '333 Avenue Ave',
   phone: 89374012373,
@@ -178,6 +197,7 @@ let exampledrinker = {
   food: 'pasteries',
 }],
  app: [{
+  id: 78,
   userName: 'jonesD1',
   password: 'dtagumm2!',
   name:'DeDe Jones',
@@ -192,11 +212,13 @@ let exampledrinker = {
 ### 5. Team Tracker App
 Entities(1- Fan, 2-Team)
 let fan = {
+  id: Number,
   name: 'string',
   address: 'string',
   favTeam: 'string'
 }
 let team = {
+  id: Number,
   name:'string',
   gameDates:'string',
   teamRecord: 'string',
@@ -206,11 +228,13 @@ let team = {
   history: 't=string'
 }
 let exampleFan = {
+  id: 922,
   name: 'Stan Penny',
   address: '8989 Fred St',
   favTeam: 'Da-Bears' 
 },
 team: [{
+  id: 04,
   name:'Bears',
   gameDates:'Sept 4 thru Jan 2',
   teamRecord: '4-0',
@@ -224,8 +248,8 @@ team: [{
 ### Final Thoughts:
 
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
-1- Found it difficult to seperate the parameters needed of the user and the provider
-2- Trying to think of everything needed
+-I had no issue establishing the relationship. I had a larger issue detirmining what parameters would differ between the two.-
+-The ERD's we did last week helped some.
 
 
 ### Reading and Videos for Tomorrow
