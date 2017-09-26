@@ -5,7 +5,7 @@
 const express = require('express');
 const router = express.Router();
 const Schema = require('../models/donuts.js');
-
+const DonutModel = Schema.DonutsModel
 //======================
 // INDEX
 //======================
