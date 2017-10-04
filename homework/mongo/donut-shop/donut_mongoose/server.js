@@ -10,7 +10,7 @@ var methodOverride = require("method-override");
 var hbs = require("hbs");
 var logger = require('morgan');
 const db = mongoose.connection;
-
+mongoose.Promise = global.Promise
 //======================
 // MIDDLEWARE
 //======================
@@ -40,7 +40,8 @@ app.use('/', donutsController);
 // LISTENERS
 //======================
 //CONNECT MONGOOSE TO "donut_store"
-mongoose.connect('mongodb://localhost/donuts');
+
+mongoose.connect('mongodb://localhost/donut_store');
 db.once('open', function() {
     console.log('database is online!');
 });
